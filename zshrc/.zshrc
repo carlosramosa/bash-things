@@ -1,5 +1,5 @@
 #Initial message
-fortune | cowsay -f stegosaurus
+fortune | cowsay -f stegosaurus | lolcat
 
 #My theme
 ZSH_THEME="powerlevel9k/powerlevel9k"
