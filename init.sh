@@ -7,6 +7,7 @@ brew install fortune
 brew install cowsay
 brew install lolcat
 brew install colorls
+brew install terminal-notifier
 
 cp ./zshrc/.zshrc /Users/$USER
 cp ./scripts/.aliasrc /Users/$USER
