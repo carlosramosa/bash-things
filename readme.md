@@ -1,7 +1,18 @@
 ## BASH THINGS
 
-THis is an awesome repo ... TODO
+This repo contains my ugly terminal style and some stupid functions
 
-
-# Contains:
+# Files:
 - .zshrc
+- .aliasrc
+- .promptrc
+- .stupidrc
+- .autocompleterc
+
+
+# USAGE
+
+```
+    chmod +x ./init.sh 
+    ./init.sh
+``` 
