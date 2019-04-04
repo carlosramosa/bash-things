@@ -1,0 +1,17 @@
+#Initial message
+RANDOM=$$$(date +%s)
+animations=( beavis.zen blowfish bong bud-frogs bunny cheese cower daemon default dragon
+dragon-and-cow elephant elephant-in-snake eyes flaming-sheep ghostbusters
+head-in hellokitty kiss kitty koala kosh lukae-koala meow milk moofasa moose
+mutilated ren satanic sheep skeleton small sodomized stegosaurus stimpy
+supermilker surgery telebears three-eyes turkey turtle tux udder vader
+vader-koala www )
+fortune | cowsay -f ${animations[$RANDOM % ${#animations[@]} ]} | lolcat
+echo "Hola $USER, ¿cómo estás?" | terminal-notifier -sound default
+
+#For this you need to install cowsay
+command_not_found_handler () {
+    echo No existe el comando $1 | cowsay -f  ${animations[$RANDOM % ${#animations[@]} ]} | lolcat
+
+    return 127
+}
